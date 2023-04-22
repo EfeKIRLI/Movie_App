@@ -19,6 +19,7 @@ body{
     border-radius: 3px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
     position: relative;
+    overflow: hidden;
    
 }
 
@@ -94,7 +95,20 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    bottom: 0   ;    
+    bottom: 0;    
     right: 0;
+    transform: translateY(100%);
+    background-color:#fff;
+    padding:2rem;
+    transition: transform 0.5s ease-in;
 }
+
+.overview h3 {
+    margin-top: 0;
+}
+
+.movie:hover .overview{
+    transform: translateY(0);
+}
+
 
